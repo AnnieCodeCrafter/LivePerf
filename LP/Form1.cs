@@ -15,6 +15,14 @@ namespace LP
         public Form1()
         {
             InitializeComponent();
+
         }
+
+        public void hello()
+        {
+            string connectionString = "Data Source=mssql.fhict.local;Initial Catalog=dbi364679;User ID=dbi364679;Password=Thorax1998";
+        }
+
+
     }
 }
