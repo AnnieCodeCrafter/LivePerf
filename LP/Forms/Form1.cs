@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Form1 : Form
+    public partial class btnCoalRtrn : Form
     {
-        public Form1()
+        public btnCoalRtrn()
         {
             InitializeComponent();
 
@@ -27,7 +27,21 @@ namespace LP
         {
             Coalitie C = new Coalitie();
             this.Visible = false;
-            C.Show();
+            C.ShowDialog();
+            this.Visible = true;
+
+           
+        }
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3a F3 = new Form3a();
+            this.Visible = false;
+            F3.ShowDialog();
+            this.Visible = true;
         }
     }
 }

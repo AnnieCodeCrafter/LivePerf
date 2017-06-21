@@ -1,6 +1,6 @@
 ﻿namespace LP
 {
-    partial class Form1
+    partial class btnCoalRtrn
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.btnCoal = new System.Windows.Forms.Button();
             this.btnPart = new System.Windows.Forms.Button();
-            this.btnExp = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCoal
@@ -45,31 +45,32 @@
             // 
             // btnPart
             // 
-            this.btnPart.Location = new System.Drawing.Point(154, 239);
+            this.btnPart.Location = new System.Drawing.Point(154, 179);
             this.btnPart.Name = "btnPart";
             this.btnPart.Size = new System.Drawing.Size(153, 23);
             this.btnPart.TabIndex = 1;
             this.btnPart.Text = "Partij";
             this.btnPart.UseVisualStyleBackColor = true;
             // 
-            // btnExp
+            // button1
             // 
-            this.btnExp.Location = new System.Drawing.Point(154, 158);
-            this.btnExp.Name = "btnExp";
-            this.btnExp.Size = new System.Drawing.Size(153, 23);
-            this.btnExp.TabIndex = 2;
-            this.btnExp.Text = "Exporteer Bestaande Coalitie";
-            this.btnExp.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(154, 136);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Coalitie Ophalen";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // btnCoalRtrn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 393);
-            this.Controls.Add(this.btnExp);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPart);
             this.Controls.Add(this.btnCoal);
-            this.Name = "Form1";
+            this.Name = "btnCoalRtrn";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -79,7 +80,7 @@
 
         private System.Windows.Forms.Button btnCoal;
         private System.Windows.Forms.Button btnPart;
-        private System.Windows.Forms.Button btnExp;
+        private System.Windows.Forms.Button button1;
     }
 }
 
