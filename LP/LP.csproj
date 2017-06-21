@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coalitie.cs">
+    <Compile Include="Forms\Coalitie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coalitie.Designer.cs">
+    <Compile Include="Forms\Coalitie.Designer.cs">
       <DependentUpon>Coalitie.cs</DependentUpon>
     </Compile>
     <Compile Include="dbi364679DataSet.Designer.cs">
@@ -57,19 +57,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbi364679DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Coalitie.resx">
+    <Compile Include="Classes\Uitslag.cs" />
+    <EmbeddedResource Include="Forms\Coalitie.resx">
       <DependentUpon>Coalitie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -20,7 +20,7 @@ namespace LP
 
         public void hello()
         {
-            string connectionString = "Data Source=mssql.fhict.local;Initial Catalog=dbi364679;User ID=dbi364679;Password=Thorax1998";
+            
         }
 
         private void btnCoal_Click(object sender, EventArgs e)

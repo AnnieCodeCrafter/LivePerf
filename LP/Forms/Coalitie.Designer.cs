@@ -35,16 +35,15 @@
             this.tableAdapterManager = new LP.dbi364679DataSetTableAdapters.TableAdapterManager();
             this.uitslagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uitslagTableAdapter = new LP.dbi364679DataSetTableAdapters.UitslagTableAdapter();
-            this.uitslagDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvRes = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnOK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dbi364679DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.verkiezingenBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uitslagBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uitslagDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRes)).BeginInit();
             this.SuspendLayout();
             // 
             // dbi364679DataSet
@@ -78,66 +77,69 @@
             // 
             this.uitslagTableAdapter.ClearBeforeFill = true;
             // 
-            // uitslagDataGridView
+            // DgvRes
             // 
-            this.uitslagDataGridView.AutoGenerateColumns = false;
-            this.uitslagDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uitslagDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.uitslagDataGridView.DataSource = this.uitslagBindingSource;
-            this.uitslagDataGridView.Location = new System.Drawing.Point(27, 27);
-            this.uitslagDataGridView.Name = "uitslagDataGridView";
-            this.uitslagDataGridView.Size = new System.Drawing.Size(580, 332);
-            this.uitslagDataGridView.TabIndex = 0;
-             // 
-            // dataGridViewTextBoxColumn1
+            this.DgvRes.AllowUserToAddRows = false;
+            this.DgvRes.AllowUserToDeleteRows = false;
+            this.DgvRes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvRes.Location = new System.Drawing.Point(439, 12);
+            this.DgvRes.Name = "DgvRes";
+            this.DgvRes.ReadOnly = true;
+            this.DgvRes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvRes.Size = new System.Drawing.Size(475, 417);
+            this.DgvRes.TabIndex = 1;
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // textBox1
             // 
-            // dataGridViewTextBoxColumn2
+            this.textBox1.Location = new System.Drawing.Point(114, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.TabIndex = 2;
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Stemmen";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Stemmen";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // label1
             // 
-            // dataGridViewTextBoxColumn3
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Naam Coalitie";
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Percentage";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Percentage";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // textBox2
             // 
-            // dataGridViewTextBoxColumn4
+            this.textBox2.Location = new System.Drawing.Point(114, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 3;
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Zetels";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Zetels";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // btnOK
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "PartijID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "PartijID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.btnOK.Location = new System.Drawing.Point(56, 325);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 5;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // Coalitie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 392);
-            this.Controls.Add(this.uitslagDataGridView);
+            this.ClientSize = new System.Drawing.Size(926, 441);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DgvRes);
             this.Name = "Coalitie";
             this.Text = "Coalitie";
             ((System.ComponentModel.ISupportInitialize)(this.dbi364679DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.verkiezingenBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uitslagBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uitslagDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -149,11 +151,10 @@
         private dbi364679DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingSource uitslagBindingSource;
         private dbi364679DataSetTableAdapters.UitslagTableAdapter uitslagTableAdapter;
-        private System.Windows.Forms.DataGridView uitslagDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridView DgvRes;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnOK;
     }
 }
