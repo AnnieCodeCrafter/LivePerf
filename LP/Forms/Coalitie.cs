@@ -18,6 +18,7 @@ namespace LP
     public partial class Coalitie : Form
     {
         string connectionString = "Data Source=mssql.fhict.local;Initial Catalog=dbi364679;User ID=dbi364679;Password=Thorax1998";
+        private List<Uitslag> uitslag = new List<Uitslag>();
 
         public Coalitie()
         {
@@ -82,36 +83,29 @@ namespace LP
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            
-            foreach(DataGridViewRow row in DgvRes.SelectedRows)
+            int bleh = DgvRes.SelectedRows.Count;
+            int bluh = DgvRes.SelectedCells.Count;
+
+            int bleugh = dvgRes
+
+
+
+
+            foreach (DataGridViewRow row in DgvRes.SelectedRows)
             {
-                foreach(DataGridViewCell cell in row.Cells)
+                foreach (DataGridViewCell cell in dvg)
                 {
-                    MessageBox.Show(cell.Value.ToString());
-                  
+                    string naam = DgvRes.Rows[].Cells[0].Value.ToString();
+                    string stemmen = DgvRes.Rows[].Cells[2].Value.ToString();
+                    // DgvRes.Rows[blih].Cells[3].Value.ToString();
+
+                    MessageBox.Show(naam);
                 }
             }
+
+
         }
-
-        //public static string DGVtoString(DataGridView dgv, char delimiter)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    foreach (DataGridViewRow row in dgv.Rows)
-        //    {
-        //        foreach (DataGridViewCell cell in row.Cells)
-        //        {
-        //            sb.Append(cell.Value);
-        //            sb.Append(delimiter);
-        //        }
-        //        sb.Remove(sb.Length - 1, 1); // Removes the last delimiter 
-        //        sb.AppendLine();
-        //    }
-        //    return sb.ToString();
-        //}
-
 
     }
 
-
-   
 }

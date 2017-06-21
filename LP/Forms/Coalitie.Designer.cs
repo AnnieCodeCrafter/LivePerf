@@ -83,6 +83,7 @@
             this.DgvRes.AllowUserToDeleteRows = false;
             this.DgvRes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvRes.Location = new System.Drawing.Point(439, 12);
+            this.DgvRes.MultiSelect = false;
             this.DgvRes.Name = "DgvRes";
             this.DgvRes.ReadOnly = true;
             this.DgvRes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -114,7 +115,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(56, 325);
+            this.btnOK.Location = new System.Drawing.Point(54, 251);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;

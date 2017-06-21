@@ -12,34 +12,47 @@ namespace LP
 
     class Uitslag
     {
-        private string connectionString = "Data Source=mssql.fhict.local;Initial Catalog=dbi364679;User ID=dbi364679;Password=Thorax1998";
-        private string Naam;
-        private string Percentage;
-        private string Zetels;
+        private string naam;
+        private int stemmen;
+        private decimal percentage;
+        private int zetels;
 
-        private List<string> stuffs = new List<string>();
+        private List<Partijen> partijen = new List<Partijen>();
 
-        public void hello()
+        
+        public string Naam
         {
-
-            using (SqlConnection Conn = new SqlConnection(connectionString))
-            {
-                Conn.Open();
-                string query = "SELECT Partij.Naam, Uitslag.Stemmen, Uitslag.Percentage, Uitslag.Zetels FROM Uitslag INNER JOIN Partij ON Uitslag.PartijID = Partij.ID";
-                using (SqlCommand cmd = new SqlCommand(query, Conn))
-                {
-
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                       
-                    }
-
-
-
-                }
-
-            }
+            get { return naam; } 
         }
+
+        public int Stemmen
+        {
+            get { return stemmen; }
+        }
+
+        public decimal Percentage
+        {
+            get { return percentage; }
+        }
+
+        public int Zetels
+        {
+            get { return zetels; }
+        }
+
+
+
+       public Uitslag(string naam, int stemmen, decimal percentage, int zetels)
+        {
+            this.naam = naam;
+            this.stemmen = stemmen;
+            this.percentage = percentage;
+            this.zetels = zetels;
+        }
+
+        
+
+
     }
 }
         
